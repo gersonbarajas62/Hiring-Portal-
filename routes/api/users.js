@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 
-const validateRegisterInput = 
+const ValidateRegisterInput = 
 require("../../validation/register");
 const validateRegisterInput = require("../../validation/login");
 
@@ -86,3 +86,5 @@ router.post("/register", (req, res) => {
       });
     });
   });
+
+  module.exports = router;
