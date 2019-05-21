@@ -14,31 +14,42 @@ class Login extends Component {
       errors: {}
     };
   }
+
+  componentDidMount() {
+    // If logged in and user navigates to Login page, should redirect them to dashboard
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.auth.isAuthenticated) {
       this.props.history.push("/dashboard"); // push user to dashboard when they login
     }
-if (nextProps.errors) {
+    if (nextProps.errors) {
       this.setState({
         errors: nextProps.errors
       });
     }
   }
 
-onChange = e => {
+   onChange = e => {
     this.setState({ [e.target.id]: e.target.value });
-  };
-onSubmit = e => {
-    e.preventDefault();
-const userData = {
+   };
+  
+    onSubmit = e => {
+      e.preventDefault();
+      const userData = {
       email: this.state.email,
       password: this.state.password
     };
-this.props.loginUser(userData);
-  };
-render() {
+      
+    this.props.loginUser(userData);
+    };
+      
+    render() {
     const { errors } = this.state;
-return (
+    return (
       <div className="container">
         <div style={{ marginTop: "4rem" }} className="row">
           <div className="col s8 offset-s2">

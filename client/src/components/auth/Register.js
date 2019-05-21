@@ -18,6 +18,12 @@ class Register extends Component {
     };
   }
 
+  componentDidMount(){
+    if(this.props.auth.isAuthenticated) {
+      this.props.history.push("/dashboard");
+    }
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -107,7 +113,7 @@ return (
                   error={errors.password2}
                   id="password2"
                   type="password"
-                  clasName={classnames("", {
+                  className={classnames("", {
                     invalid: errors.password2
                   })}
                 />

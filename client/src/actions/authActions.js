@@ -48,6 +48,12 @@ export const registerUser = (userData, history) => dispatch => {
     };
   };
 
+  export const serUserLoading = () => {
+    return {
+      type: USER_LOADING
+    }
+  }
+
   export const logoutUser = () => dispatch => {
     localStorage.removeItem("jwtToken");
     setAuthToken(false);
