@@ -29,7 +29,7 @@ export const registerUser = (userData, history) => dispatch => {
 
       setAuthToken(token);
 
-      const decode = jwt_decode(token);
+      const decoded = jwt_decode(token);
 
       dispatch(setCurrentUser(decoded));
     })
