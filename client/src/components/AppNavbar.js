@@ -6,7 +6,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+
   Container
 } from 'reactstrap';
 import { connect } from 'react-redux';

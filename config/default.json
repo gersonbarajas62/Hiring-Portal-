@@ -1,5 +1,5 @@
 
 {
-  "mongoURI": "mongodb+srv://gersonroa:<password>@hiring-portal-huipr.mongodb.net/test?retryWrites=true",
+  "mongoURI": "mongodb+srv://gersonroa:Holacode101@hiring-portal-huipr.mongodb.net/test?retryWrites=true",
   "jwtSecret": "sl_myJwtSecret"
 }
