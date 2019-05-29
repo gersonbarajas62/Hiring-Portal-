@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const path = require('path');
 const config = require('config');
 const jwt = require('jsonwebtoken')
-
 const app = express();
 
 // Bodyparser Middleware
