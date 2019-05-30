@@ -12,6 +12,8 @@ import {
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
+import SearchBox from './SearchBar'
+import SearchPage from './SearchBar';
 
 class ItemModal extends Component {
   state = {
@@ -51,17 +53,15 @@ class ItemModal extends Component {
     return (
       <div>
         {this.props.isAuthenticated ? (
-          <Button
-            color='dark'
-            style={{ marginBottom: '2rem' }}
-            onClick={this.toggle}
-          >
-            Add Item
-          </Button>
-        ) : (
+          
+          <SearchPage/>
+        )
+      
+        : (
           <h4 className='mb-3 ml-4'>your next job is here</h4>
         )}
-
+  
+          
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>Add To Shopping List</ModalHeader>
           <ModalBody>

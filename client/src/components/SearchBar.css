@@ -1,0 +1,12 @@
+.active-pink-4 input[type="text"]:focus:not([readonly]) {
+  border: 1px solid #151615;
+  box-shadow: 0 0 0 1px #8ff48f;
+  position: sticky;
+  bottom: 0;
+  right: 500;
+  width: 300px;
+}
+.active-pink-3 input[type="text"] {
+  border: 1px solid #8ff48f;
+  box-shadow: 0 0 0 1px #8ff48f;
+}
