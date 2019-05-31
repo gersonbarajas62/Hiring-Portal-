@@ -121,18 +121,27 @@ INSERT INTO options (company, website, position, linktoposition, opening, about,
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
 ('ecCards','site under maintenance','Full stack developer (4)','site under maintenance','ASAP','Startup that digitalizes business cards.','Send your resume to eriklinares@hotmail.com and cc me in the email. He can tell you more about the project while the website gets fixed.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('TrueHome','https://www.truehome.com.mx/?gclid=EAIaIQobChMIhcqSjP6v4QIVlbjACh1QWQ86EAAYASAAEgIOcPD_BwE','Front end (React JS) developer (1) and Back end (Python) developer (1)','N/A','ASAP','House sales app and website.','Send your resume to julio@truehome.com.mx and cc me in the email.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Strive Benefits','http://strivebenefits.com/','Quality Assurance (1)','N/A','ASAP','Platform that keeps employee benefit information in one page and helps people find information about doctors along with other work benefits.','Send your resume to saravchettiar@yahoo.com (Saravanan Chettiar) and cc me in the email. This position is for people who want to take a break from coding and would prefer to work on a troubleshooting part; not building code but checking to see for errors, and helping clients troubleshoot. The job is remote.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Sngular','N/A','front end developer (1)','https://www.linkedin.com/jobs/search/?keywords=sngular','ASAP','International tech solutions company.','Send your resume to gabriela.barcenas@sngular.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Sngular','N/A','java developer (1)','https://www.linkedin.com/jobs/search/?keywords=sngular','ASAP','International tech solutions company.','Send your resume to gabriela.barcenas@sngular.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Sngular','https://sngular.com/','UX UI developer (2)','https://www.linkedin.com/jobs/search/?keywords=sngular','ASAP','International tech solutions company.','Send your resume to gabriela.barcenas@sngular.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Sngular','https://sngular.com/','full stack software developer (4)','https://www.linkedin.com/jobs/search/?keywords=sngular','ASAP','International tech solutions company.','Send your resume to gabriela.barcenas@sngular.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('Sngular','https://sngular.com/','back end developer (1)','https://www.linkedin.com/jobs/search/?keywords=sngular','ASAP','International tech solutions company.','Send your resume to gabriela.barcenas@sngular.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO. ');
 INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
-('','', '', '', '','');
+('EPAM','www.epam.com','Big data developer (1)','https://www.epam.com/careers/job-listings?country=Mexico&city=Mexico+City&department=Cloud+%26+DevOps&department=Data+Analysis+%26+Digital+Strategy&department=Software+Architecture&department=Software+Engineering&department=Software+Test+Engineering&department=User+Experience+%26+Design','ASAP','Software development, design, and consulting company.','Send your resume to abril_castro@epam.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
+INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
+('EPAM','www.epam.com','java developer (1)','https://www.epam.com/careers/job-listings?country=Mexico&city=Mexico+City&department=Cloud+%26+DevOps&department=Data+Analysis+%26+Digital+Strategy&department=Software+Architecture&department=Software+Engineering&department=Software+Test+Engineering&department=User+Experience+%26+Design','ASAP','Software development, design, and consulting company.','Send your resume to abril_castro@epam.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
+INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
+('EPAM','www.epam.com','Python developer (1)','https://www.epam.com/careers/job-listings?country=Mexico&city=Mexico+City&department=Cloud+%26+DevOps&department=Data+Analysis+%26+Digital+Strategy&department=Software+Architecture&department=Software+Engineering&department=Software+Test+Engineering&department=User+Experience+%26+Design','ASAP','Software development, design, and consulting company.','Send your resume to abril_castro@epam.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
+INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
+('EPAM','www.epam.com','Javascript developer (1)','https://www.epam.com/careers/job-listings?country=Mexico&city=Mexico+City&department=Cloud+%26+DevOps&department=Data+Analysis+%26+Digital+Strategy&department=Software+Architecture&department=Software+Engineering&department=Software+Test+Engineering&department=User+Experience+%26+Design','ASAP','Software development, design, and consulting company.','Send your resume to abril_castro@epam.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
+INSERT INTO options (company, website, position, linktoposition, opening, about, howto) VALUES
+('EPAM','www.epam.com','UX UI developer (1)','https://www.epam.com/careers/job-listings?country=Mexico&city=Mexico+City&department=Cloud+%26+DevOps&department=Data+Analysis+%26+Digital+Strategy&department=Software+Architecture&department=Software+Engineering&department=Software+Test+Engineering&department=User+Experience+%26+Design','ASAP','Software development, design, and consulting company.','Send your resume to abril_castro@epam.com and cc Shaili on it, MENTION WHICH POSITION YOU ARE APPLYING TO.');
+
