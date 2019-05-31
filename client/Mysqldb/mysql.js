@@ -3,10 +3,18 @@ const mysql = require('mysql')
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'password',
-  database: ''
+  password: 'Holacode',
+  database: 'partners'
 });
 
-connection.connect((err) => {
-  if (err) trow err 
-})
+const selectAll = function(callback) {
+  connection.query('SELECT * FROM ', function(err, data) {
+    if(err) {
+      callback(err, null);
+    } else {
+      callback(null, data);
+    }
+  })
+}
+
+module.exports.selectAll = selectAll;
