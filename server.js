@@ -4,6 +4,7 @@ const path = require('path');
 const config = require('config');
 const jwt = require('jsonwebtoken')
 const app = express();
+const items = require('./Mysqldb/mysql')
 
 // Bodyparser Middleware
 app.use(express.json());
@@ -20,6 +21,14 @@ mongoose
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
+  //mysql connection
+  app.get('/', function (req, res) {
+    items.selectAll(function(err, data) {
+      if(err) {
+        res.sendStatus(500);
+      }
+    })
+  })
 // Use Routes
 app.use('/api/items', require('./routes/api/items'));
 app.use('/api/users', require('./routes/api/users'));
