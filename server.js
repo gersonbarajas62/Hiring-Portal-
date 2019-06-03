@@ -22,7 +22,7 @@ mongoose
   .catch(err => console.log(err));
 
   //mysql connection
-  app.get('/', function (req, res) {
+  app.get('/info', function (req, res) {
     items.selectAll(function(err, data) {
       if(err) {
         res.sendStatus(500);

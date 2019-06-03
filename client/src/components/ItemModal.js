@@ -12,6 +12,7 @@ import {
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
+import HiringPartners from './HiringPartners';
 
 
 
@@ -54,13 +55,7 @@ class ItemModal extends Component {
       <div>
         {this.props.isAuthenticated ? (
           
-          <Button
-          color='dark'
-          style={{ marginBottom: '2rem' }}
-          onClick={this.toggle}
-        >
-          Add Item
-        </Button>
+      <HiringPartners />
         )
       
         : (
