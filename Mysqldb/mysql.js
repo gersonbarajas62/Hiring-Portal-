@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
 });
 
 var selectAll = function(callback) {
-  connection.query('SELECT * FROM variety', function(err, data) {
+  connection.query('SELECT * FROM options', function(err, data) {
     if(err) {
       callback(err, null);
     } else {
@@ -20,4 +20,3 @@ var selectAll = function(callback) {
 module.exports.selectAll = selectAll;
 
 
-module.exports.selectAll = selectAll;

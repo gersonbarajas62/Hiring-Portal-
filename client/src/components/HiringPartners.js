@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 class HiringPartners extends React.Component {
+ constructor(props){
+   super(props)
+ }
 
   render(){
     return (
-      <div> search the list </div>
+      <div> </div>
+
     )
   }
 }
 
-export default HiringPartners;
+export default HiringPartners; 

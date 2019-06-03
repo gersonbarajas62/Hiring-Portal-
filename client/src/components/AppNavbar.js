@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 import RegisterModal from './auth/RegisterModal';
 import LoginModal from './auth/LoginModal';
 import Logout from './auth/Logout';
-
+import SearchBar from './SearchBar'
 
 class AppNavbar extends Component {
   state = {
@@ -54,6 +54,9 @@ class AppNavbar extends Component {
         </NavItem>
         <NavItem>
           <LoginModal />
+        </NavItem>
+        <NavItem>
+          <SearchBar />
         </NavItem>
       </Fragment>
     );
