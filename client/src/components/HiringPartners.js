@@ -18,8 +18,8 @@ class HiringPartners extends React.Component {
     url: '/info',
     method: 'GET',
     success: (data) => {
-      this.setState({foodlist:data});
-      console.log(data)
+      this.setState({list:data});
+    
     },
     error: (xhr, err) => {
       console.log('err', err);
@@ -29,10 +29,15 @@ class HiringPartners extends React.Component {
  
 
   render(){
-    const {partners} = this.state
-    console.log(this.state.list)
+    const partners = this.state.list.map(name => {
+     return(
+       <li key={name.id}classame="partners">{name.company} </li>
+     )
+    })
+   
+   
     return (
-      <div> </div>
+      <ul>{partners}</ul>
 
     )
   }
