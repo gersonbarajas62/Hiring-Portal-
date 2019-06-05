@@ -22,13 +22,17 @@ mongoose
   .catch(err => console.log(err));
 
   //mysql connection
-  app.get('/info', function (req, res) {
-    items.selectAll(function(err, data) {
-      if(err) {
-        res.sendStatus(500);
-      }
-    })
+  app.get('/info', function(req, res){
+    items.selectAll((err, data) => {
+       if(err) {
+         console.log('eror conecting to the database');
+         res.sendStatus(500);
+       } else {
+         res.status(200).json(data);
+       }
+     })
   })
+
 // Use Routes
 app.use('/api/items', require('./routes/api/items'));
 app.use('/api/users', require('./routes/api/users'));
