@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+var DataTable = require('react-data-components').DataTable;
+
+
 class HiringPartners extends React.Component {
  constructor(props){
    super(props)
@@ -26,19 +29,27 @@ class HiringPartners extends React.Component {
       }
     })
   }
- 
+
+  
 
   render(){
-    const partners = this.state.list.map(name => {
-     return(
-       <li key={name.id}classame="partners">{name.company} </li>
-     )
-    })
-   
-   
+    var columns = [
+      { title: "id", prop: 'id'},   
+      { title: 'company', prop: 'company'  },
+      { title: 'website', prop: 'website' },
+      { title: 'position', prop: 'position' },
+  
+    ];
     return (
-      <ul>{partners}</ul>
-
+      <div>
+     <DataTable
+      keys="name"
+      columns={columns}
+      initialData={this.state.list}
+      initialPageLength={5}
+      initialSortBy={{ prop: 'city', order: 'descending' }}
+    />
+    </div>
     )
   }
 }
