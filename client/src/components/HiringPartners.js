@@ -16,6 +16,8 @@ class HiringPartners extends React.Component {
     this.info()
   }
 
+  
+
    info (){
     $.ajax({
     url: '/info',
@@ -30,6 +32,9 @@ class HiringPartners extends React.Component {
     })
   }
 
+  handleClick(){
+    console.log(alert)
+  }
   
 
   render(){
