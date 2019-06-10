@@ -66,6 +66,7 @@ class AppNavbar extends Component {
         <Navbar color='dark' dark expand='sm' className='mb-5'>
           <Container>
             <NavbarBrand href='/'>HolacodePortal</NavbarBrand>
+            <NavbarBrand href='/'>welcome To Holacode Job Searcher</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className='ml-auto' navbar>

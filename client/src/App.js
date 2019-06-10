@@ -28,7 +28,7 @@ class App extends Component {
     
           </Container>
         </div>
-        <h2>welcome To Holacode Job Searcher</h2>
+        <h2></h2>
       </Provider>
     );
   }
