@@ -19,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
+
         <div className='App'>
           <AppNavbar />
           <Container>
@@ -27,7 +28,7 @@ class App extends Component {
     
           </Container>
         </div>
-        
+        <h2>welcome To Holacode Job Searcher</h2>
       </Provider>
     );
   }

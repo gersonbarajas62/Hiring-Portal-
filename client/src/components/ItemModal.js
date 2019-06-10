@@ -59,7 +59,7 @@ class ItemModal extends Component {
         )
       
         : (
-          <h4 className='mb-3 ml-4'>your next job is here</h4>
+          <h4 className='mb-3 ml-4'></h4>
         )}
   
           
